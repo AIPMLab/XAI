@@ -18,7 +18,6 @@ class_labels = ['0', '1', '2', ]  # 按照训练时的顺序
 predicted_label = class_labels[np.argmax(predicted_classes)]
 #print(f"Model predicts: {predicted_label}")
 
-# 确定‘meningioma_tumor’的索引
 tumor_label_index = class_labels.index('1') if '1' in class_labels else None
 if tumor_label_index is not None:
     print(f"Index of '0': {tumor_label_index}")
